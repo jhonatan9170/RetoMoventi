@@ -1,6 +1,6 @@
 
 import RxSwift
 
-public protocol LoginWorkerType {
-    func login(input: LoginInput) -> Observable<Void>
+public protocol LoginWorker {
+    func login(_ input: LoginInput) -> Observable<Void>
 }

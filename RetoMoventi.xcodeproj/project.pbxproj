@@ -35,6 +35,15 @@
 		03EB041B2C4E84BC0080AFF1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB041A2C4E84BC0080AFF1 /* CustomTextField.swift */; };
 		03EB041F2C4E84C30080AFF1 /* AccountCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB041D2C4E84C30080AFF1 /* AccountCardCell.swift */; };
 		03EB04202C4E84C30080AFF1 /* AccountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB041E2C4E84C30080AFF1 /* AccountCardView.swift */; };
+		03EB04232C4E9CFE0080AFF1 /* LoginDefaultWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04222C4E9CFE0080AFF1 /* LoginDefaultWorker.swift */; };
+		03EB04262C4EA59E0080AFF1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04252C4EA59E0080AFF1 /* LoginViewModel.swift */; };
+		03EB04282C4EA63B0080AFF1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04272C4EA63B0080AFF1 /* ErrorTracker.swift */; };
+		03EB042A2C4EA6C20080AFF1 /* LazyViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04292C4EA6C20080AFF1 /* LazyViewModelType.swift */; };
+		03EB042C2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB042B2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift */; };
+		03EB042E2C4EACCE0080AFF1 /* LoginViewModelInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB042D2C4EACCE0080AFF1 /* LoginViewModelInjector.swift */; };
+		03EB04302C4EAD330080AFF1 /* LoginViewControllerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB042F2C4EAD330080AFF1 /* LoginViewControllerInjector.swift */; };
+		03EB04332C4EB3A00080AFF1 /* Extension+Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */; };
+		03EB04352C4EBB3D0080AFF1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */; };
 		CAC0DC36FF26836D617AE310 /* Pods_RetoMoventi_MoventiCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A459FA2D5957947B41F04 /* Pods_RetoMoventi_MoventiCore.framework */; };
 		EE23A4AA985478FBFA26F60D /* Pods_RetoMoventi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +109,15 @@
 		03EB041A2C4E84BC0080AFF1 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		03EB041D2C4E84C30080AFF1 /* AccountCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCardCell.swift; sourceTree = "<group>"; };
 		03EB041E2C4E84C30080AFF1 /* AccountCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCardView.swift; sourceTree = "<group>"; };
+		03EB04222C4E9CFE0080AFF1 /* LoginDefaultWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDefaultWorker.swift; sourceTree = "<group>"; };
+		03EB04252C4EA59E0080AFF1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		03EB04272C4EA63B0080AFF1 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		03EB04292C4EA6C20080AFF1 /* LazyViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyViewModelType.swift; sourceTree = "<group>"; };
+		03EB042B2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Bindings.swift"; sourceTree = "<group>"; };
+		03EB042D2C4EACCE0080AFF1 /* LoginViewModelInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelInjector.swift; sourceTree = "<group>"; };
+		03EB042F2C4EAD330080AFF1 /* LoginViewControllerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerInjector.swift; sourceTree = "<group>"; };
+		03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Observables.swift"; sourceTree = "<group>"; };
+		03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetoMoventi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE077401622767819B69E87 /* Pods-RetoMoventi-MoventiCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi-MoventiCore.release.xcconfig"; path = "Target Support Files/Pods-RetoMoventi-MoventiCore/Pods-RetoMoventi-MoventiCore.release.xcconfig"; sourceTree = "<group>"; };
 		8BDD9292FDF3D70D89BC689C /* Pods-RetoMoventi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi.debug.xcconfig"; path = "Target Support Files/Pods-RetoMoventi/Pods-RetoMoventi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +213,10 @@
 				03EB03E22C4D7A7E0080AFF1 /* Entities */,
 				03EB03E12C4D7A770080AFF1 /* Workers */,
 				03EB03D62C4D78150080AFF1 /* MoventiCore.h */,
+				03EB04272C4EA63B0080AFF1 /* ErrorTracker.swift */,
+				03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */,
+				03EB04292C4EA6C20080AFF1 /* LazyViewModelType.swift */,
+				03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */,
 			);
 			path = MoventiCore;
 			sourceTree = "<group>";
@@ -218,6 +240,7 @@
 		03EB03E52C4D7BB50080AFF1 /* webAPI */ = {
 			isa = PBXGroup;
 			children = (
+				03EB04212C4E9B920080AFF1 /* Login */,
 				03EB03E62C4D7BE00080AFF1 /* Network.swift */,
 				03EB03EA2C4D7FC70080AFF1 /* SessionMananger.swift */,
 				03EB03EC2C4D80130080AFF1 /* KeychainHelper.swift */,
@@ -236,7 +259,7 @@
 		03EB04042C4E82560080AFF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				03EB04052C4E826C0080AFF1 /* LoginViewController.swift */,
+				03EB04242C4EA5800080AFF1 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -291,6 +314,26 @@
 				03EB041E2C4E84C30080AFF1 /* AccountCardView.swift */,
 			);
 			path = AccountCardView;
+			sourceTree = "<group>";
+		};
+		03EB04212C4E9B920080AFF1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04222C4E9CFE0080AFF1 /* LoginDefaultWorker.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		03EB04242C4EA5800080AFF1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04052C4E826C0080AFF1 /* LoginViewController.swift */,
+				03EB04252C4EA59E0080AFF1 /* LoginViewModel.swift */,
+				03EB042B2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift */,
+				03EB042D2C4EACCE0080AFF1 /* LoginViewModelInjector.swift */,
+				03EB042F2C4EAD330080AFF1 /* LoginViewControllerInjector.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		74F1B7F280FB0A26096DDBEE /* Frameworks */ = {
@@ -536,11 +579,16 @@
 			files = (
 				03EB03A72C4C69910080AFF1 /* AppDelegate.swift in Sources */,
 				03EB03ED2C4D80130080AFF1 /* KeychainHelper.swift in Sources */,
+				03EB042E2C4EACCE0080AFF1 /* LoginViewModelInjector.swift in Sources */,
+				03EB042C2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift in Sources */,
 				03EB03A92C4C69910080AFF1 /* SceneDelegate.swift in Sources */,
 				03EB03E72C4D7BE00080AFF1 /* Network.swift in Sources */,
+				03EB04232C4E9CFE0080AFF1 /* LoginDefaultWorker.swift in Sources */,
 				03EB04062C4E826C0080AFF1 /* LoginViewController.swift in Sources */,
 				03EB03F42C4E73420080AFF1 /* Constants.swift in Sources */,
 				03EB03E92C4D7E490080AFF1 /* Extensions.swift in Sources */,
+				03EB04302C4EAD330080AFF1 /* LoginViewControllerInjector.swift in Sources */,
+				03EB04262C4EA59E0080AFF1 /* LoginViewModel.swift in Sources */,
 				03EB03EB2C4D7FC70080AFF1 /* SessionMananger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,7 +612,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EB042A2C4EA6C20080AFF1 /* LazyViewModelType.swift in Sources */,
 				03EB03E42C4D7ACA0080AFF1 /* LoginInput.swift in Sources */,
+				03EB04282C4EA63B0080AFF1 /* ErrorTracker.swift in Sources */,
+				03EB04332C4EB3A00080AFF1 /* Extension+Observables.swift in Sources */,
+				03EB04352C4EBB3D0080AFF1 /* ActivityIndicator.swift in Sources */,
 				03EB03E02C4D783C0080AFF1 /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,7 +789,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanChavez.RetoMoventi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -768,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanChavez.RetoMoventi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -864,6 +916,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -900,6 +953,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

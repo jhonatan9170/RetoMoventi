@@ -1,8 +1,12 @@
 
 import DesignSystem
-import UIKit
+import RxSwift
 
 class LoginViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    
+    var loginViewModel: LoginViewModel!
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -15,7 +19,7 @@ class LoginViewController: UIViewController {
         return imageView
     }()
     
-    private lazy var emailField: CustomTextField = {
+     lazy var emailField: CustomTextField = {
         let emailField = CustomTextField()
         emailField.translatesAutoresizingMaskIntoConstraints = false
         emailField.textField.placeholder = "Correo electrónico"
@@ -24,7 +28,7 @@ class LoginViewController: UIViewController {
         return emailField
     }()
     
-    private lazy var passwordField: CustomTextField = {
+     lazy var passwordField: CustomTextField = {
         let passwordField = CustomTextField()
         passwordField.translatesAutoresizingMaskIntoConstraints = false
         passwordField.textField.placeholder = "Contraseña"
@@ -32,12 +36,11 @@ class LoginViewController: UIViewController {
         view.addSubview(passwordField)
         return passwordField
     }()
-    private lazy var loginButton: CustomButton = {
+     lazy var loginButton: CustomButton = {
         let loginButton = CustomButton(style: .filled)
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.setTitle("Login", for: .normal)
         view.addSubview(loginButton)
-        loginButton.isEnabled = false
         return loginButton
     }()
     
@@ -59,7 +62,7 @@ class LoginViewController: UIViewController {
         return savedNameLabel
     }()
     
-    private lazy var nameStackView: UIStackView = {
+     lazy var nameStackView: UIStackView = {
         let nameStackView = UIStackView(arrangedSubviews: [helloLabel, savedNameLabel])
         nameStackView.translatesAutoresizingMaskIntoConstraints = false
         nameStackView.axis = .horizontal
@@ -81,11 +84,10 @@ class LoginViewController: UIViewController {
         return componentsStackView
     }()
     
-    private lazy var loader: UIActivityIndicatorView = {
+     lazy var loader: UIActivityIndicatorView = {
         let loader = UIActivityIndicatorView(style: .medium)
         loader.translatesAutoresizingMaskIntoConstraints = false
         loader.color = .black
-        loader.startAnimating()
         loader.hidesWhenStopped = true
         loader.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
         view.addSubview(loader)
@@ -97,6 +99,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupConstraints()
+        configBindings()
     }
 
     
