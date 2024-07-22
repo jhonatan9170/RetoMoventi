@@ -1,8 +1,10 @@
 import UIKit
+import MoventiCore
 
 public class MovementCardCell: UITableViewCell {
     
     public let movementView = MovementCardView()
+    public static let cellIdentifier = "MovementsCell"
     
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -31,7 +33,7 @@ public class MovementCardCell: UITableViewCell {
         movementView.layer.shadowRadius = 4
     }
     
-    public func configure(with title: String?, date: String?, amount: String?, state: Int?) {
-        movementView.configure(with: title, date: date, amount: amount, state: state)
+    public func configure(model: MovementModel) {
+        movementView.configure(with: model.title, date: model.date, amount: model.amount, state: model.state)
     }
 }

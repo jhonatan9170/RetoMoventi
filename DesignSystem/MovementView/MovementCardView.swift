@@ -80,7 +80,7 @@ public class MovementCardView: UIView {
     /// 2 - nuevo ingreso
     /// 3 - nuevo ingreso
     public func configure(with title: String?, date: String?, amount: String?, state: Int?) {
-        if let title = title, let date = date, let amount = amount, let state = state {
+        if let title = title, let date = date, let amount = amount?.formattedAsCurrency, let state = state {
             titleLabel.text = title
             dateLabel.text = date
             amountLabel.text = amount

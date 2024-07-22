@@ -1,11 +1,12 @@
 
 import DesignSystem
 import RxSwift
-
+import MoventiCore
 class HomeProductosViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     var accountViewModel: AccountsViewModel!
+    var accounts:[AccountModel] = []
     
     lazy var productsLabel: UILabel = {
         let label = UILabel()
@@ -43,6 +44,8 @@ class HomeProductosViewController: UIViewController {
         configBindings()
         view.backgroundColor = .white
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
     }
     
     func setupConstraints() {

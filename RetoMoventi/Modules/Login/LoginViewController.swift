@@ -100,8 +100,23 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         configBindings()
+        validateUserInMemory()
     }
 
+    private func validateUserInMemory() {
+        
+        if (self.getUser() != nil) && (self.getCorreo() != nil ) {
+            savedNameLabel.text = self.getUser()
+            nameStackView.isHidden = false
+            emailField.isHidden = true
+            emailField.textField.text = getCorreo() ?? ""
+            emailField.textField.rx.text.onNext(self.getCorreo() ?? "")
+        } else {
+            nameStackView.isHidden = true
+            emailField.isHidden = false
+        }
+        
+    }
     
     private func setupConstraints() {
         

@@ -1,8 +1,5 @@
-//
-//  MoviementoWorker.swift
-//  MoventiCore
-//
-//  Created by Jhonatan Chavez  on 22/07/24.
-//
+import RxSwift
 
-import Foundation
+public protocol MovementsWorker {
+    func fetchMovements(numberAccount:String) -> Observable<[MovementModel]>
+}

@@ -49,10 +49,12 @@ class SessionManager {
     
     @objc private func validateTimer() {
         let time = getTime()
-        if time >= Constants.foregroundSessionMaxTime,hasloggedIn {
-            timer.invalidate()
-            
-        }
+        if time >= Constants.foregroundSessionMaxTime && hasloggedIn {
+                DispatchQueue.main.async { [weak self] in
+                    self?.timer.invalidate()
+                    self?.showSessionExpiredAlert()
+                }
+            }
     }
     
     private func showSessionExpiredAlert() {

@@ -25,7 +25,14 @@ class LoginDefaultWorker: LoginWorker {
                 let data = response.data
                 SessionManager.shared.saveToken(data.accessToken)
                 SessionManager.shared.saveRefreshToken(data.refreshToken)
-                SessionManager.shared.start()
+                UserDefaultMananger.shared.save(object: input.email, key: Constants.correKey)
+                if let user = data.user.rbac?.role {
+                    UserDefaultMananger.shared.save(object: user, key: Constants.userKey)
+                }
+                if let user = data.user.profile.userName {
+                    UserDefaultMananger.shared.save(object: user, key: Constants.userKey)
+                }
+                
                 return ()
             }
         

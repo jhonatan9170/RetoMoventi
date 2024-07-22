@@ -104,11 +104,11 @@ public class FullInfoCardView: UIView {
         UIPasteboard.general.string = accountNumberLabel.text
     }
     
-    public func configure(image: UIImage?, title: String, currency: String, amount: String, accountNumber: String) {
-        imageView.image = image
-        titleLabel.text = title
-        currencyLabel.text = currency
-        amountLabel.text = amount
-        accountNumberLabel.text = accountNumber
+    public func configure(model: AccountModel) {
+        imageView.image = UIImage(named: model.imageName, in: Bundle(for: AccountCardCell.self), compatibleWith: nil)
+        titleLabel.text = model.title
+        currencyLabel.text = model.currency
+        amountLabel.text = model.amount.formattedAsCurrency
+        accountNumberLabel.text = model.accountNumber
     }
 }

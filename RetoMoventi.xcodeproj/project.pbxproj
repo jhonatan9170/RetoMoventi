@@ -56,6 +56,14 @@
 		03EB044D2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */; };
 		03EB044F2C4ED6EF0080AFF1 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB044E2C4ED6EF0080AFF1 /* AccountsViewModel.swift */; };
 		03EB04512C4ED7840080AFF1 /* AccountViewModelInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04502C4ED7840080AFF1 /* AccountViewModelInjector.swift */; };
+		03EB04552C4EDB2C0080AFF1 /* DetailViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04542C4EDB2C0080AFF1 /* DetailViewControlller.swift */; };
+		03EB04572C4EDB390080AFF1 /* DetailViewControlller+Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04562C4EDB390080AFF1 /* DetailViewControlller+Bindings.swift */; };
+		03EB04592C4EDB420080AFF1 /* DetailViewControlllerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04582C4EDB420080AFF1 /* DetailViewControlllerInjector.swift */; };
+		03EB045B2C4EDB570080AFF1 /* MovementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB045A2C4EDB570080AFF1 /* MovementsViewModel.swift */; };
+		03EB045D2C4EDB620080AFF1 /* MovementsViewModelInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB045C2C4EDB620080AFF1 /* MovementsViewModelInjector.swift */; };
+		03EB045F2C4EE34D0080AFF1 /* MovementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB045E2C4EE34D0080AFF1 /* MovementModel.swift */; };
+		03EB04622C4EE5360080AFF1 /* MovementsDefaultWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04612C4EE5360080AFF1 /* MovementsDefaultWorker.swift */; };
+		03EB04662C4EECBC0080AFF1 /* UserDefaultMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04652C4EECBC0080AFF1 /* UserDefaultMananger.swift */; };
 		CAC0DC36FF26836D617AE310 /* Pods_RetoMoventi_MoventiCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A459FA2D5957947B41F04 /* Pods_RetoMoventi_MoventiCore.framework */; };
 		EE23A4AA985478FBFA26F60D /* Pods_RetoMoventi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +166,14 @@
 		03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDefaultWorker.swift; sourceTree = "<group>"; };
 		03EB044E2C4ED6EF0080AFF1 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		03EB04502C4ED7840080AFF1 /* AccountViewModelInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelInjector.swift; sourceTree = "<group>"; };
+		03EB04542C4EDB2C0080AFF1 /* DetailViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControlller.swift; sourceTree = "<group>"; };
+		03EB04562C4EDB390080AFF1 /* DetailViewControlller+Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewControlller+Bindings.swift"; sourceTree = "<group>"; };
+		03EB04582C4EDB420080AFF1 /* DetailViewControlllerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControlllerInjector.swift; sourceTree = "<group>"; };
+		03EB045A2C4EDB570080AFF1 /* MovementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewModel.swift; sourceTree = "<group>"; };
+		03EB045C2C4EDB620080AFF1 /* MovementsViewModelInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewModelInjector.swift; sourceTree = "<group>"; };
+		03EB045E2C4EE34D0080AFF1 /* MovementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementModel.swift; sourceTree = "<group>"; };
+		03EB04612C4EE5360080AFF1 /* MovementsDefaultWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsDefaultWorker.swift; sourceTree = "<group>"; };
+		03EB04652C4EECBC0080AFF1 /* UserDefaultMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultMananger.swift; sourceTree = "<group>"; };
 		3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetoMoventi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE077401622767819B69E87 /* Pods-RetoMoventi-MoventiCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi-MoventiCore.release.xcconfig"; path = "Target Support Files/Pods-RetoMoventi-MoventiCore/Pods-RetoMoventi-MoventiCore.release.xcconfig"; sourceTree = "<group>"; };
 		8BDD9292FDF3D70D89BC689C /* Pods-RetoMoventi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi.debug.xcconfig"; path = "Target Support Files/Pods-RetoMoventi/Pods-RetoMoventi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +291,7 @@
 				03EB03E32C4D7ACA0080AFF1 /* LoginInput.swift */,
 				03EB04392C4EC53F0080AFF1 /* AcccountModel.swift */,
 				03EB043B2C4EC6650080AFF1 /* CustomButtonType.swift */,
+				03EB045E2C4EE34D0080AFF1 /* MovementModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -282,11 +299,11 @@
 		03EB03E52C4D7BB50080AFF1 /* webAPI */ = {
 			isa = PBXGroup;
 			children = (
+				03EB04602C4EE51A0080AFF1 /* Detail */,
 				03EB044B2C4ED58A0080AFF1 /* Accounts */,
 				03EB04212C4E9B920080AFF1 /* Login */,
 				03EB03E62C4D7BE00080AFF1 /* Network.swift */,
 				03EB03EA2C4D7FC70080AFF1 /* SessionMananger.swift */,
-				03EB03EC2C4D80130080AFF1 /* KeychainHelper.swift */,
 			);
 			path = webAPI;
 			sourceTree = "<group>";
@@ -302,6 +319,8 @@
 		03EB04042C4E82560080AFF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03EB04632C4EEC730080AFF1 /* Helpers */,
+				03EB04522C4EDB080080AFF1 /* Detail */,
 				03EB04362C4EC15B0080AFF1 /* Home */,
 				03EB04242C4EA5800080AFF1 /* Login */,
 			);
@@ -409,6 +428,35 @@
 				03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		03EB04522C4EDB080080AFF1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04542C4EDB2C0080AFF1 /* DetailViewControlller.swift */,
+				03EB04562C4EDB390080AFF1 /* DetailViewControlller+Bindings.swift */,
+				03EB04582C4EDB420080AFF1 /* DetailViewControlllerInjector.swift */,
+				03EB045A2C4EDB570080AFF1 /* MovementsViewModel.swift */,
+				03EB045C2C4EDB620080AFF1 /* MovementsViewModelInjector.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		03EB04602C4EE51A0080AFF1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04612C4EE5360080AFF1 /* MovementsDefaultWorker.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		03EB04632C4EEC730080AFF1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				03EB03EC2C4D80130080AFF1 /* KeychainHelper.swift */,
+				03EB04652C4EECBC0080AFF1 /* UserDefaultMananger.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		74F1B7F280FB0A26096DDBEE /* Frameworks */ = {
@@ -655,19 +703,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				03EB03A72C4C69910080AFF1 /* AppDelegate.swift in Sources */,
+				03EB04622C4EE5360080AFF1 /* MovementsDefaultWorker.swift in Sources */,
 				03EB03ED2C4D80130080AFF1 /* KeychainHelper.swift in Sources */,
 				03EB042E2C4EACCE0080AFF1 /* LoginViewModelInjector.swift in Sources */,
 				03EB042C2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift in Sources */,
 				03EB03A92C4C69910080AFF1 /* SceneDelegate.swift in Sources */,
 				03EB03E72C4D7BE00080AFF1 /* Network.swift in Sources */,
+				03EB045D2C4EDB620080AFF1 /* MovementsViewModelInjector.swift in Sources */,
+				03EB04592C4EDB420080AFF1 /* DetailViewControlllerInjector.swift in Sources */,
 				03EB044D2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift in Sources */,
 				03EB04452C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift in Sources */,
 				03EB04512C4ED7840080AFF1 /* AccountViewModelInjector.swift in Sources */,
+				03EB04572C4EDB390080AFF1 /* DetailViewControlller+Bindings.swift in Sources */,
 				03EB04232C4E9CFE0080AFF1 /* LoginDefaultWorker.swift in Sources */,
 				03EB04062C4E826C0080AFF1 /* LoginViewController.swift in Sources */,
 				03EB03F42C4E73420080AFF1 /* Constants.swift in Sources */,
+				03EB04552C4EDB2C0080AFF1 /* DetailViewControlller.swift in Sources */,
 				03EB03E92C4D7E490080AFF1 /* Extensions.swift in Sources */,
 				03EB04302C4EAD330080AFF1 /* LoginViewControllerInjector.swift in Sources */,
+				03EB04662C4EECBC0080AFF1 /* UserDefaultMananger.swift in Sources */,
+				03EB045B2C4EDB570080AFF1 /* MovementsViewModel.swift in Sources */,
 				03EB04382C4EC1740080AFF1 /* HomeProductosViewController.swift in Sources */,
 				03EB04262C4EA59E0080AFF1 /* LoginViewModel.swift in Sources */,
 				03EB04432C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift in Sources */,
@@ -699,6 +754,7 @@
 				03EB03E42C4D7ACA0080AFF1 /* LoginInput.swift in Sources */,
 				03EB043C2C4EC6650080AFF1 /* CustomButtonType.swift in Sources */,
 				03EB043A2C4EC53F0080AFF1 /* AcccountModel.swift in Sources */,
+				03EB045F2C4EE34D0080AFF1 /* MovementModel.swift in Sources */,
 				03EB04282C4EA63B0080AFF1 /* ErrorTracker.swift in Sources */,
 				03EB044A2C4ED5550080AFF1 /* AccountsWorker.swift in Sources */,
 				03EB04332C4EB3A00080AFF1 /* Extension+Observables.swift in Sources */,
