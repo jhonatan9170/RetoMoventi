@@ -11,10 +11,7 @@ extension LoginViewController {
             .disposed(by: disposeBag)
         
         loginViewModel.output.validado
-            .map{
-                print("exito")
-            }
-            .drive()
+            .drive(goToHome)
             .disposed(by: disposeBag)
         
         loginViewModel.output.error
@@ -44,5 +41,12 @@ extension LoginViewController {
     
     private func getLoginInput() -> LoginInput {
         return LoginInput(email: emailField.textField.text ?? "", password: passwordField.textField.text ?? "")
+    }
+    
+    private var goToHome: Binder<Void> {
+        return Binder(self, binding: { [weak self] (vc, _) in
+            let vc = HomeProductosViewControllerInjector.inject()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        })
     }
 }

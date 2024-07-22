@@ -1,4 +1,5 @@
 import UIKit
+import MoventiCore
 
 public class FullInfoCardView: UIView {
     private let imageView = UIImageView()

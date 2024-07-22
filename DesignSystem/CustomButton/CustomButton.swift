@@ -1,10 +1,5 @@
 import UIKit
-
-public enum ButtonStyle {
-    case text
-    case filled
-    case outlined
-}
+import MoventiCore
 
 public class CustomButton: UIButton {
     

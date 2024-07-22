@@ -44,6 +44,18 @@
 		03EB04302C4EAD330080AFF1 /* LoginViewControllerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB042F2C4EAD330080AFF1 /* LoginViewControllerInjector.swift */; };
 		03EB04332C4EB3A00080AFF1 /* Extension+Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */; };
 		03EB04352C4EBB3D0080AFF1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */; };
+		03EB04382C4EC1740080AFF1 /* HomeProductosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04372C4EC1740080AFF1 /* HomeProductosViewController.swift */; };
+		03EB043A2C4EC53F0080AFF1 /* AcccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04392C4EC53F0080AFF1 /* AcccountModel.swift */; };
+		03EB043C2C4EC6650080AFF1 /* CustomButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB043B2C4EC6650080AFF1 /* CustomButtonType.swift */; };
+		03EB043D2C4EC7CE0080AFF1 /* MoventiCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EB03D42C4D78150080AFF1 /* MoventiCore.framework */; };
+		03EB043E2C4EC7CE0080AFF1 /* MoventiCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03EB03D42C4D78150080AFF1 /* MoventiCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03EB04432C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04422C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift */; };
+		03EB04452C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04442C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift */; };
+		03EB04482C4ED52D0080AFF1 /* MovementsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04472C4ED52D0080AFF1 /* MovementsWorker.swift */; };
+		03EB044A2C4ED5550080AFF1 /* AccountsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04492C4ED5550080AFF1 /* AccountsWorker.swift */; };
+		03EB044D2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */; };
+		03EB044F2C4ED6EF0080AFF1 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB044E2C4ED6EF0080AFF1 /* AccountsViewModel.swift */; };
+		03EB04512C4ED7840080AFF1 /* AccountViewModelInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB04502C4ED7840080AFF1 /* AccountViewModelInjector.swift */; };
 		CAC0DC36FF26836D617AE310 /* Pods_RetoMoventi_MoventiCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A459FA2D5957947B41F04 /* Pods_RetoMoventi_MoventiCore.framework */; };
 		EE23A4AA985478FBFA26F60D /* Pods_RetoMoventi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +75,13 @@
 			remoteGlobalIDString = 03EB03D32C4D78150080AFF1;
 			remoteInfo = MoventiCore;
 		};
+		03EB043F2C4EC7CE0080AFF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EB039B2C4C69910080AFF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EB03D32C4D78150080AFF1;
+			remoteInfo = MoventiCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +93,17 @@
 			files = (
 				03EB03DB2C4D78150080AFF1 /* MoventiCore.framework in Embed Frameworks */,
 				03EB03C62C4C6C530080AFF1 /* DesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EB04412C4EC7CE0080AFF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03EB043E2C4EC7CE0080AFF1 /* MoventiCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +148,16 @@
 		03EB042F2C4EAD330080AFF1 /* LoginViewControllerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerInjector.swift; sourceTree = "<group>"; };
 		03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Observables.swift"; sourceTree = "<group>"; };
 		03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		03EB04372C4EC1740080AFF1 /* HomeProductosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductosViewController.swift; sourceTree = "<group>"; };
+		03EB04392C4EC53F0080AFF1 /* AcccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcccountModel.swift; sourceTree = "<group>"; };
+		03EB043B2C4EC6650080AFF1 /* CustomButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonType.swift; sourceTree = "<group>"; };
+		03EB04422C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductosViewControllerInjector.swift; sourceTree = "<group>"; };
+		03EB04442C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeproductosViewControlller+Bindings.swift"; sourceTree = "<group>"; };
+		03EB04472C4ED52D0080AFF1 /* MovementsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsWorker.swift; sourceTree = "<group>"; };
+		03EB04492C4ED5550080AFF1 /* AccountsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsWorker.swift; sourceTree = "<group>"; };
+		03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDefaultWorker.swift; sourceTree = "<group>"; };
+		03EB044E2C4ED6EF0080AFF1 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		03EB04502C4ED7840080AFF1 /* AccountViewModelInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelInjector.swift; sourceTree = "<group>"; };
 		3210F1E71215F89033BF6C8D /* Pods_RetoMoventi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetoMoventi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE077401622767819B69E87 /* Pods-RetoMoventi-MoventiCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi-MoventiCore.release.xcconfig"; path = "Target Support Files/Pods-RetoMoventi-MoventiCore/Pods-RetoMoventi-MoventiCore.release.xcconfig"; sourceTree = "<group>"; };
 		8BDD9292FDF3D70D89BC689C /* Pods-RetoMoventi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoMoventi.debug.xcconfig"; path = "Target Support Files/Pods-RetoMoventi/Pods-RetoMoventi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EB043D2C4EC7CE0080AFF1 /* MoventiCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,13 +251,10 @@
 		03EB03D52C4D78150080AFF1 /* MoventiCore */ = {
 			isa = PBXGroup;
 			children = (
+				03EB04462C4ED5040080AFF1 /* ReactiveUtils */,
 				03EB03E22C4D7A7E0080AFF1 /* Entities */,
 				03EB03E12C4D7A770080AFF1 /* Workers */,
 				03EB03D62C4D78150080AFF1 /* MoventiCore.h */,
-				03EB04272C4EA63B0080AFF1 /* ErrorTracker.swift */,
-				03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */,
-				03EB04292C4EA6C20080AFF1 /* LazyViewModelType.swift */,
-				03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */,
 			);
 			path = MoventiCore;
 			sourceTree = "<group>";
@@ -225,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				03EB03DF2C4D783C0080AFF1 /* LoginWorker.swift */,
+				03EB04472C4ED52D0080AFF1 /* MovementsWorker.swift */,
+				03EB04492C4ED5550080AFF1 /* AccountsWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -233,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				03EB03E32C4D7ACA0080AFF1 /* LoginInput.swift */,
+				03EB04392C4EC53F0080AFF1 /* AcccountModel.swift */,
+				03EB043B2C4EC6650080AFF1 /* CustomButtonType.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -240,6 +282,7 @@
 		03EB03E52C4D7BB50080AFF1 /* webAPI */ = {
 			isa = PBXGroup;
 			children = (
+				03EB044B2C4ED58A0080AFF1 /* Accounts */,
 				03EB04212C4E9B920080AFF1 /* Login */,
 				03EB03E62C4D7BE00080AFF1 /* Network.swift */,
 				03EB03EA2C4D7FC70080AFF1 /* SessionMananger.swift */,
@@ -259,6 +302,7 @@
 		03EB04042C4E82560080AFF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03EB04362C4EC15B0080AFF1 /* Home */,
 				03EB04242C4EA5800080AFF1 /* Login */,
 			);
 			path = Modules;
@@ -336,6 +380,37 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		03EB04362C4EC15B0080AFF1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04372C4EC1740080AFF1 /* HomeProductosViewController.swift */,
+				03EB04422C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift */,
+				03EB04442C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift */,
+				03EB044E2C4ED6EF0080AFF1 /* AccountsViewModel.swift */,
+				03EB04502C4ED7840080AFF1 /* AccountViewModelInjector.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03EB04462C4ED5040080AFF1 /* ReactiveUtils */ = {
+			isa = PBXGroup;
+			children = (
+				03EB04272C4EA63B0080AFF1 /* ErrorTracker.swift */,
+				03EB04312C4EB30A0080AFF1 /* Extension+Observables.swift */,
+				03EB04342C4EBB3D0080AFF1 /* ActivityIndicator.swift */,
+				03EB04292C4EA6C20080AFF1 /* LazyViewModelType.swift */,
+			);
+			path = ReactiveUtils;
+			sourceTree = "<group>";
+		};
+		03EB044B2C4ED58A0080AFF1 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				03EB044C2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
 		74F1B7F280FB0A26096DDBEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,10 +483,12 @@
 				03EB03BB2C4C6C530080AFF1 /* Sources */,
 				03EB03BC2C4C6C530080AFF1 /* Frameworks */,
 				03EB03BD2C4C6C530080AFF1 /* Resources */,
+				03EB04412C4EC7CE0080AFF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03EB04402C4EC7CE0080AFF1 /* PBXTargetDependency */,
 			);
 			name = DesignSystem;
 			productName = DesignSystem;
@@ -583,12 +660,18 @@
 				03EB042C2C4EAA2E0080AFF1 /* LoginViewController+Bindings.swift in Sources */,
 				03EB03A92C4C69910080AFF1 /* SceneDelegate.swift in Sources */,
 				03EB03E72C4D7BE00080AFF1 /* Network.swift in Sources */,
+				03EB044D2C4ED5EB0080AFF1 /* AccountDefaultWorker.swift in Sources */,
+				03EB04452C4ECF580080AFF1 /* HomeproductosViewControlller+Bindings.swift in Sources */,
+				03EB04512C4ED7840080AFF1 /* AccountViewModelInjector.swift in Sources */,
 				03EB04232C4E9CFE0080AFF1 /* LoginDefaultWorker.swift in Sources */,
 				03EB04062C4E826C0080AFF1 /* LoginViewController.swift in Sources */,
 				03EB03F42C4E73420080AFF1 /* Constants.swift in Sources */,
 				03EB03E92C4D7E490080AFF1 /* Extensions.swift in Sources */,
 				03EB04302C4EAD330080AFF1 /* LoginViewControllerInjector.swift in Sources */,
+				03EB04382C4EC1740080AFF1 /* HomeProductosViewController.swift in Sources */,
 				03EB04262C4EA59E0080AFF1 /* LoginViewModel.swift in Sources */,
+				03EB04432C4ECEF20080AFF1 /* HomeProductosViewControllerInjector.swift in Sources */,
+				03EB044F2C4ED6EF0080AFF1 /* AccountsViewModel.swift in Sources */,
 				03EB03EB2C4D7FC70080AFF1 /* SessionMananger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,10 +697,14 @@
 			files = (
 				03EB042A2C4EA6C20080AFF1 /* LazyViewModelType.swift in Sources */,
 				03EB03E42C4D7ACA0080AFF1 /* LoginInput.swift in Sources */,
+				03EB043C2C4EC6650080AFF1 /* CustomButtonType.swift in Sources */,
+				03EB043A2C4EC53F0080AFF1 /* AcccountModel.swift in Sources */,
 				03EB04282C4EA63B0080AFF1 /* ErrorTracker.swift in Sources */,
+				03EB044A2C4ED5550080AFF1 /* AccountsWorker.swift in Sources */,
 				03EB04332C4EB3A00080AFF1 /* Extension+Observables.swift in Sources */,
 				03EB04352C4EBB3D0080AFF1 /* ActivityIndicator.swift in Sources */,
 				03EB03E02C4D783C0080AFF1 /* LoginWorker.swift in Sources */,
+				03EB04482C4ED52D0080AFF1 /* MovementsWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +720,11 @@
 			isa = PBXTargetDependency;
 			target = 03EB03D32C4D78150080AFF1 /* MoventiCore */;
 			targetProxy = 03EB03D82C4D78150080AFF1 /* PBXContainerItemProxy */;
+		};
+		03EB04402C4EC7CE0080AFF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EB03D32C4D78150080AFF1 /* MoventiCore */;
+			targetProxy = 03EB043F2C4EC7CE0080AFF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

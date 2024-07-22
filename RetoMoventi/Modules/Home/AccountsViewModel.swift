@@ -2,42 +2,42 @@ import RxSwift
 import RxCocoa
 import MoventiCore
 
-class LoginViewModel: LazyViewModelType{
+class AccountsViewModel: LazyViewModelType{
     var input: Input!
     var output: Output!
     
-    private let inputSubject = ReplaySubject<LoginInput>.create(bufferSize: 1)
-
+    private let triggerSubject = ReplaySubject<Void>.create(bufferSize: 1)
     
-    init(worker: LoginWorker,scheduler: ImmediateSchedulerType = ConcurrentDispatchQueueScheduler(qos: .background)) {
+    init(worker: AccountsWorker,scheduler: ImmediateSchedulerType = ConcurrentDispatchQueueScheduler(qos: .background)) {
         let errorTracker = ErrorTracker()
         let activityIndicator = ActivityIndicator()
-        let resultado = inputSubject
+        let accounts = triggerSubject
             .observe(on: scheduler)
             .flatMapLatest {
-                worker.login($0)
+                worker.fetchAccounts()
                     .trackActivity(activityIndicator)
                     .trackError(errorTracker)
                 .asDriverOnErrorJustComplete() }
             .asDriverOnErrorJustComplete()
         
         output = Output(
-            validado: resultado,
+            accounts: accounts,
             cargando: activityIndicator.asDriver(),
             error: errorTracker.asDriver())
         
-        input = Input(inputSubject:inputSubject.asObserver())
+        input = Input(triggerSubject: triggerSubject.asObserver())
     }
 }
 
-extension LoginViewModel {
+extension AccountsViewModel {
     struct Input {
-        let inputSubject: AnyObserver<LoginInput>
+        let triggerSubject: AnyObserver<Void>
     }
     
     struct Output {
-        let validado: Driver<Void>
+        let accounts: Driver<[AccountModel]>
         let cargando: Driver<Bool>
         let error: Driver<Error>
     }
 }
+

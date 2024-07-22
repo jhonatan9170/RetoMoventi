@@ -1,4 +1,5 @@
 import UIKit
+import MoventiCore
 
 public class AccountCardView: UIView {
     private let imageView = UIImageView()
@@ -33,7 +34,7 @@ public class AccountCardView: UIView {
         currencyLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         amountLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         
-        arrowImageView.image = UIImage(named: "arrow-icon")
+        arrowImageView.image = UIImage(named: "arrow-icon", in: Bundle(for: AccountCardCell.self), compatibleWith: nil)
         arrowImageView.contentMode = .scaleAspectFit
         
     }
@@ -87,10 +88,10 @@ public class AccountCardView: UIView {
         backgroundColor = .white
     }
     
-    public func configure(image: UIImage?, title: String, currency: String, amount: String) {
-        imageView.image = image
-        titleLabel.text = title
-        currencyLabel.text = currency
-        amountLabel.text = amount
+    public func configure(model: AccountModel) {
+        imageView.image = UIImage(named: model.imageName, in: Bundle(for: AccountCardCell.self), compatibleWith: nil)
+        titleLabel.text = model.title
+        currencyLabel.text = model.currency
+        amountLabel.text = model.amount.formattedAsCurrency
     }
 }

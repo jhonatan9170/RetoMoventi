@@ -3,6 +3,7 @@ import UIKit
 public class AccountCardCell: UITableViewCell {
 
     public let cardView = AccountCardView()
+    public static let cellIdentifier = "CuentasCell"
     
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
