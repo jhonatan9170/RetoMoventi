@@ -27,24 +27,20 @@ extension LoginViewController {
             .disposed(by: disposeBag)
         
 
-        passwordField.textField.rx.text
+        Driver.combineLatest(passwordField.textField.rx.text.asDriver(), emailField.textField.rx.text.asDriver())
             .map{[weak self] _ in
                 let validpass = self?.passwordField.validatePassword() ?? false
-                let validuser = self?.emailField.validateEmail() ?? false
+                let validuser = self?.emailField.validateDNI() ?? false
                 return validpass&&validuser
             }
-            .asDriverOnErrorJustComplete()
             .drive(loginButton.rx.isEnabled)
             .disposed(by: disposeBag)
-
-
-
     }
     
     private func getLoginInput() -> LoginInput {
-        if let correo = getCorreo(){
+        /*if let correo = getCorreo(){
             return LoginInput(email: correo, password: passwordField.textField.text ?? "")
-        }
+        }*/
         return LoginInput(email: emailField.textField.text ?? "", password: passwordField.textField.text ?? "")
     }
     

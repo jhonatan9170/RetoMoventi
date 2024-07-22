@@ -4,6 +4,7 @@ public enum textfieldType {
     case email
     case password
     case normal
+    case dni
 }
 public class CustomTextField: UIView {
     
@@ -128,6 +129,24 @@ public class CustomTextField: UIView {
         }
     }
     
+    public func validateDNI() -> Bool {
+        guard let text = textField.text, !text.isEmpty else {
+            showError("El campo DNI no puede estar vacío")
+            return false
+        }
+        
+        let dniRegex = "^[0-9]{8}$"
+        let dniPred = NSPredicate(format:"SELF MATCHES %@", dniRegex)
+        
+        if dniPred.evaluate(with: text) {
+            hideError()
+            return true
+        } else {
+            showError("DNI invalido")
+            return false
+        }
+    }
+    
     public func validatePassword(minLength: Int = 8) -> Bool {
         guard let text = textField.text, !text.isEmpty else {
             showError("El campo no puede estar vacío")
@@ -165,5 +184,8 @@ public class CustomTextField: UIView {
     public func configure(textfieldType: textfieldType) {
         self.textfieldType = textfieldType
         textField.isSecureTextEntry = textfieldType == .password
+        if textfieldType == .dni {
+            textField.keyboardType = .numberPad
+        }
     }
 }

@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
      lazy var emailField: CustomTextField = {
         let emailField = CustomTextField()
         emailField.translatesAutoresizingMaskIntoConstraints = false
-        emailField.textField.placeholder = "Correo electrónico"
-        emailField.configure(textfieldType: .email)
+        emailField.textField.placeholder = "Numero DNI"
+         emailField.configure(textfieldType: .dni)
         view.addSubview(emailField)
         return emailField
     }()
@@ -105,7 +105,7 @@ class LoginViewController: UIViewController {
 
     private func validateUserInMemory() {
         
-        if (self.getUser() != nil) && (self.getCorreo() != nil ) {
+        /*if (self.getUser() != nil) && (self.getCorreo() != nil ) {
             savedNameLabel.text = self.getUser()
             nameStackView.isHidden = false
             emailField.isHidden = true
@@ -114,7 +114,7 @@ class LoginViewController: UIViewController {
         } else {
             nameStackView.isHidden = true
             emailField.isHidden = false
-        }
+        }*/
         
     }
     

@@ -1,7 +1,7 @@
 import Foundation
 
 enum Constants {
-    static let foregroundSessionMaxTime = 5
+    static let foregroundSessionMaxTime = 120
     static let urlLogin = "https://fxservicesstaging.nunchee.com/api/1.0/auth/users/login/anonymous"
     static let tokenauthsession = "Basic cHJ1ZWJhc2RldjpwcnVlYmFzZGV2U2VjcmV0"
     
@@ -9,3 +9,4 @@ enum Constants {
     static let userKey = "userKey"
 
 }
+
