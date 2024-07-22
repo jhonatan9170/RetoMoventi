@@ -9,5 +9,8 @@ target 'RetoMoventi' do
     pod 'SwiftyRSA'
     pod 'RxSwift'
     pod 'RxCocoa'
-
+    target 'MoventiCore' do
+      pod 'RxSwift'
+      pod 'RxCocoa'
+    end
 end
